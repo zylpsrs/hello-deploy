@@ -1,0 +1,7 @@
+apiVersion: hello.operator.io/v1
+kind: Greeter
+metadata:
+  name: e2
+spec:
+  image: registry.ocp.zyl.io:5000/greeter:v2
+  size: 1

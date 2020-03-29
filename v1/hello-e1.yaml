@@ -1,0 +1,6 @@
+apiVersion: hello.operator.io/v1
+kind: Hello
+metadata:
+  name: e1
+spec:
+  size: 1

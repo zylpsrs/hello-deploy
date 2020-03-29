@@ -1,0 +1,7 @@
+apiVersion: hello.operator.io/v1
+kind: Hello
+metadata:
+  name: e2
+spec:
+  image: registry.ocp.zyl.io:5000/hello:v2
+  size: 1
