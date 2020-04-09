@@ -1,0 +1,7 @@
+apiVersion: hello.operator.io/v1
+kind: Hello
+metadata:
+  name: e1-metrics
+spec:
+  size: 1
+  image: core.apps.ocp.zyl.io/hello/hello:v1-metrics
