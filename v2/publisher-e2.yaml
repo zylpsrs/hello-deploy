@@ -1,7 +1,0 @@
-apiVersion: hello.operator.io/v1
-kind: Publisher
-metadata:
-  name: e2
-spec:
-  image: registry.ocp.zyl.io:5000/publisher:v2
-  size: 1

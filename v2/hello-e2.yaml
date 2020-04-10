@@ -3,5 +3,5 @@ kind: Hello
 metadata:
   name: e2
 spec:
-  image: registry.ocp.zyl.io:5000/hello:v2
+  image: core.apps.ocp.zyl.io/hello/hello:v2
   size: 1

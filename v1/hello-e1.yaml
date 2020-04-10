@@ -4,3 +4,4 @@ metadata:
   name: e1
 spec:
   size: 1
+  image: core.apps.ocp.zyl.io/hello/hello:v1
