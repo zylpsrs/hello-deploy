@@ -1,0 +1,8 @@
+apiVersion: hello.operator.io/v1
+kind: Greeter
+metadata:
+  name: v3-metrics
+spec:
+  size: 1
+  image: core.apps.ocp.zyl.io/hello/greeter:v3-metrics
+  istioSidecarInject: "True"

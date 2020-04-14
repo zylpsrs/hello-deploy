@@ -1,7 +1,0 @@
-apiVersion: hello.operator.io/v1
-kind: Greeter
-metadata:
-  name: e3-metrics
-spec:
-  image: core.apps.ocp.zyl.io/hello/greeter:v3-metrics
-  size: 1

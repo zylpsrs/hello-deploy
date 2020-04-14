@@ -1,7 +1,7 @@
 apiVersion: hello.operator.io/v1
 kind: Hello
 metadata:
-  name: e2
+  name: v2
 spec:
   image: core.apps.ocp.zyl.io/hello/hello:v2
-  size: 1
+  size: 0
