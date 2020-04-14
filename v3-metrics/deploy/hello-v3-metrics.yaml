@@ -3,7 +3,7 @@ kind: Hello
 metadata:
   name: v3-metrics
 spec:
-  image: core.apps.ocp.zyl.io/hello/hello:v3-metrics
-  size: 1
+  size: 0
   istioSidecarInject: "True"
   publisherService: "publisher:9080"
+  image: core.apps.ocp.zyl.io/hello/hello:v3-metrics

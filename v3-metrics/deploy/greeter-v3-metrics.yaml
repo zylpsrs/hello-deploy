@@ -3,6 +3,6 @@ kind: Greeter
 metadata:
   name: v3-metrics
 spec:
-  size: 1
-  image: core.apps.ocp.zyl.io/hello/greeter:v3-metrics
+  size: 0
   istioSidecarInject: "True"
+  image: core.apps.ocp.zyl.io/hello/greeter:v3-metrics
