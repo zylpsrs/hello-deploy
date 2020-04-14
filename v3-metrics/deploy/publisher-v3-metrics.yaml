@@ -6,4 +6,4 @@ spec:
   image: core.apps.ocp.zyl.io/hello/publisher:v3-metrics
   size: 1
   istioSidecarInject: "True"
-  greeterService: "greeter-v3-metrics:9080"
+  greeterService: "greeter:9080"

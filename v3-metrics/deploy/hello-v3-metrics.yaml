@@ -6,4 +6,4 @@ spec:
   image: core.apps.ocp.zyl.io/hello/hello:v3-metrics
   size: 1
   istioSidecarInject: "True"
-  publisherService: "publisher-v3-metrics:9080"
+  publisherService: "publisher:9080"
