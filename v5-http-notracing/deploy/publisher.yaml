@@ -5,5 +5,5 @@ metadata:
 spec:
   size: 1
   istioSidecarInject: "True"
-  greeterService: "greeter:9080"
+  greeterService: "greeter-grpc:9080"
   image: core.apps.ocp.zyl.io/hello/publisher:v5-http-notracing

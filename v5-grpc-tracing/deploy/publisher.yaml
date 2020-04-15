@@ -1,9 +1,32 @@
-apiVersion: hello.operator.io/v1
-kind: Publisher
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
-  name: v5-grpc-tracing
+  labels:
+    app: publisher
+    version: v5-grpc-tracing
+  name: publisher-v5-grpc-tracing
 spec:
-  size: 1
-  istioSidecarInject: "True"
-  greeterService: "greeter:9080"
-  image: core.apps.ocp.zyl.io/hello/publisher:v5-grpc-tracing
+  replicas: 1
+  selector:
+    matchLabels:
+      app: publisher
+      version: v5-grpc-tracing
+  template:
+    metadata:
+      annotations:
+        sidecar.istio.io/inject: "True"
+      labels:
+        app: publisher
+        version: v5-grpc-tracing
+    spec:
+      containers:
+      - env:
+        - name: GREETER_SERVICE
+          value: greeter-grpc:9080
+        image: core.apps.ocp.zyl.io/hello/publisher:v5-grpc-tracing
+        imagePullPolicy: Always
+        name: publisher
+        ports:
+        - containerPort: 9080
+          name: web
+          protocol: TCP
