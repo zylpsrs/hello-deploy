@@ -1,0 +1,9 @@
+apiVersion: hello.operator.io/v1
+kind: Publisher
+metadata:
+  name: v5-http-notracing
+spec:
+  size: 1
+  istioSidecarInject: "True"
+  greeterService: "greeter:9080"
+  image: core.apps.ocp.zyl.io/hello/publisher:v5-http-notracing
