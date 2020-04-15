@@ -1,0 +1,8 @@
+apiVersion: hello.operator.io/v1
+kind: Greeter
+metadata:
+  name: v5-grpc-tracing
+spec:
+  size: 1
+  istioSidecarInject: "True"
+  image: core.apps.ocp.zyl.io/hello/greeter:v5-grpc-tracing

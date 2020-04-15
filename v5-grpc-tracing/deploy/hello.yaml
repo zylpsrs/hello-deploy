@@ -1,0 +1,9 @@
+apiVersion: hello.operator.io/v1
+kind: Hello
+metadata:
+  name: v5-grpc-tracing
+spec:
+  size: 1
+  istioSidecarInject: "True"
+  publisherService: "publisher:9080"
+  image: core.apps.ocp.zyl.io/hello/hello:v5-grpc-tracing
